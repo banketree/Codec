@@ -1,2 +1,2 @@
-# H264
+# Codec
 android h264
