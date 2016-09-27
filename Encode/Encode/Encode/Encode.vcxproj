@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A461AA37-C632-4BFE-B0D8-6AA3BF4A4B4A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>G:\Android_Ndk\android-ndk-r10b\platforms\android-16\arch-arm\usr\include;G:\Android_Ndk\android-ndk-r10b\toolchains\arm-linux-androideabi-4.6\prebuilt\windows\lib\gcc\arm-linux-androideabi\4.6\include;G:\Android_Ndk\android-ndk-r10b\toolchains\arm-linux-androideabi-4.6\prebuilt\windows\lib\gcc\arm-linux-androideabi\4.6\include-fixed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakeOutput>$(ProjectDir)Encode-Debug.vgdbsettings</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath>G:\Android_Ndk\android-ndk-r10b\platforms\android-16\arch-arm\usr\include;G:\Android_Ndk\android-ndk-r10b\toolchains\arm-linux-androideabi-4.6\prebuilt\windows\lib\gcc\arm-linux-androideabi\4.6\include;G:\Android_Ndk\android-ndk-r10b\toolchains\arm-linux-androideabi-4.6\prebuilt\windows\lib\gcc\arm-linux-androideabi\4.6\include-fixed;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakeOutput>$(ProjectDir)Encode-Release.vgdbsettings</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\AndroidManifest.xml" />
+    <None Include="..\..\jni\Android.mk" />
+    <None Include="..\..\jni\Application.mk" />
+    <None Include="..\..\jni\libyuv\Android.mk" />
+    <None Include="..\..\jni\libyuv\Application.mk" />
+    <None Include="..\..\jni\libyuv\LICENSE" />
+    <None Include="..\..\src\com\eotu\h264encode\Encoder.java" />
+    <None Include="..\..\src\com\eotu\h264encode\MainActivity.java" />
+    <None Include="..\..\src\com\eotu\h264encode\SrsEncoder.java" />
+    <None Include="..\..\src\net\ossrs\yasea\MainActivity.java" />
+    <None Include="..\..\src\net\ossrs\yasea\SrsEncoder.java" />
+    <None Include="..\..\src\net\ossrs\yasea\SrsFlvMuxer.java" />
+    <None Include="..\..\src\net\ossrs\yasea\SrsMp4Muxer.java" />
+    <None Include="..\..\src\net\ossrs\yasea\SrsPublisher.java" />
+    <None Include="..\..\src\net\ossrs\yasea\SrsRtmpPublisher.java" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\jni\libencode.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\compare.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\compare_common.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\compare_gcc.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\compare_neon.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\compare_neon64.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\compare_win.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert_argb.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert_from.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert_from_argb.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert_jpeg.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert_to_argb.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\convert_to_i420.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\cpu_id.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\mjpeg_decoder.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\mjpeg_validate.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\planar_functions.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_any.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_argb.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_common.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_gcc.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_mips.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_neon.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_neon64.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_win.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_any.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_common.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_gcc.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_mips.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_neon.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_neon64.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\row_win.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_any.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_argb.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_common.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_gcc.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_mips.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_neon.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_neon64.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\scale_win.cc" />
+    <ClCompile Include="..\..\jni\libyuv\source\video_common.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\jni\libx264\x264.h" />
+    <ClInclude Include="..\..\jni\libx264\x264_config.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\basic_types.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\compare.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\compare_row.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\convert.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\convert_argb.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\convert_from.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\convert_from_argb.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\cpu_id.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\libyuv.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\mjpeg_decoder.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\planar_functions.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\rotate.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\rotate_argb.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\rotate_row.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\row.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\scale.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\scale_argb.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\scale_row.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\version.h" />
+    <ClInclude Include="..\..\jni\libyuv\include\video_common.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

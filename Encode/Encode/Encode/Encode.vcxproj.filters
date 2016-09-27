@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{337d65ad-dd2b-4c71-bebc-b7b6b0c4df80}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{162a906f-922c-4f06-8baa-d09287cb16a4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{2237f4a8-5cab-4ac9-864b-c062d6a209fb}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\libx264">
+      <UniqueIdentifier>{da016b24-92e0-43b5-af1a-6811a8d688ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libyuv">
+      <UniqueIdentifier>{b9c913ac-8eff-41b3-8036-05eed103a13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libyuv\include">
+      <UniqueIdentifier>{f0df5694-b659-49e3-b8a1-707615345c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\libyuv\source">
+      <UniqueIdentifier>{5dec0b58-945b-4798-bfca-6d5c97778496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libx264">
+      <UniqueIdentifier>{0d3ae484-a274-4c54-8f8c-e32647fc377f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libyuv">
+      <UniqueIdentifier>{985b5f18-72fd-4960-b475-4d33a37d7ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libyuv\include">
+      <UniqueIdentifier>{1871b120-824c-407e-822f-b275754d6f99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\libyuv\source">
+      <UniqueIdentifier>{f63fa76b-a9bf-4321-bb02-17f29993bd65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files">
+      <UniqueIdentifier>{4b7780ee-8394-40d8-8bb8-cdeff14d63bd}</UniqueIdentifier>
+      <Extensions>*.java</Extensions>
+    </Filter>
+    <Filter Include="Java Source Files\com">
+      <UniqueIdentifier>{492557f1-e98a-4ce5-a174-616763c36f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files\com\eotu">
+      <UniqueIdentifier>{435715e8-0d20-4ffc-9ce6-4e64595108e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files\com\eotu\h264encode">
+      <UniqueIdentifier>{4576a503-9f89-41c9-92ee-4ceda4768c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files\com\googlecode">
+      <UniqueIdentifier>{9bbf6456-f28e-48a9-8586-33c193357d02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files\net">
+      <UniqueIdentifier>{5c3afcc4-a7dc-4aff-979e-7ad46e5aeffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files\net\ossrs">
+      <UniqueIdentifier>{bec5fcbd-cb8a-4f6d-b1e4-c8d0aa7cf6ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Java Source Files\net\ossrs\yasea">
+      <UniqueIdentifier>{750b9ce5-3453-4ae6-8b83-6b65b35b2ff7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\AndroidManifest.xml" />
+    <None Include="..\..\jni\Android.mk" />
+    <None Include="..\..\jni\Application.mk" />
+    <None Include="..\..\jni\libyuv\Android.mk" />
+    <None Include="..\..\jni\libyuv\Application.mk" />
+    <None Include="..\..\jni\libyuv\LICENSE">
+      <Filter>Source files\libyuv</Filter>
+    </None>
+    <None Include="..\..\src\com\eotu\h264encode\Encoder.java">
+      <Filter>Java Source Files\com\eotu\h264encode</Filter>
+    </None>
+    <None Include="..\..\src\com\eotu\h264encode\MainActivity.java">
+      <Filter>Java Source Files\com\eotu\h264encode</Filter>
+    </None>
+    <None Include="..\..\src\com\eotu\h264encode\SrsEncoder.java">
+      <Filter>Java Source Files\com\eotu\h264encode</Filter>
+    </None>
+    <None Include="..\..\src\net\ossrs\yasea\MainActivity.java">
+      <Filter>Java Source Files\net\ossrs\yasea</Filter>
+    </None>
+    <None Include="..\..\src\net\ossrs\yasea\SrsEncoder.java">
+      <Filter>Java Source Files\net\ossrs\yasea</Filter>
+    </None>
+    <None Include="..\..\src\net\ossrs\yasea\SrsFlvMuxer.java">
+      <Filter>Java Source Files\net\ossrs\yasea</Filter>
+    </None>
+    <None Include="..\..\src\net\ossrs\yasea\SrsMp4Muxer.java">
+      <Filter>Java Source Files\net\ossrs\yasea</Filter>
+    </None>
+    <None Include="..\..\src\net\ossrs\yasea\SrsPublisher.java">
+      <Filter>Java Source Files\net\ossrs\yasea</Filter>
+    </None>
+    <None Include="..\..\src\net\ossrs\yasea\SrsRtmpPublisher.java">
+      <Filter>Java Source Files\net\ossrs\yasea</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\jni\libyuv\source\compare.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\compare_common.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\compare_gcc.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\compare_neon.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\compare_neon64.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\compare_win.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert_argb.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert_from.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert_from_argb.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert_jpeg.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert_to_argb.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\convert_to_i420.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\cpu_id.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\mjpeg_decoder.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\mjpeg_validate.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\planar_functions.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_any.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_argb.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_common.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_gcc.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_mips.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_neon.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_neon64.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\rotate_win.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_any.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_common.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_gcc.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_mips.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_neon.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_neon64.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\row_win.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_any.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_argb.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_common.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_gcc.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_mips.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_neon.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_neon64.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\scale_win.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libyuv\source\video_common.cc">
+      <Filter>Source files\libyuv\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\jni\libencode.cc">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\jni\libx264\x264.h">
+      <Filter>Header files\libx264</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libx264\x264_config.h">
+      <Filter>Header files\libx264</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\basic_types.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\compare.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\compare_row.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\convert.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\convert_argb.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\convert_from.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\convert_from_argb.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\cpu_id.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\libyuv.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\mjpeg_decoder.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\planar_functions.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\rotate.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\rotate_argb.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\rotate_row.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\row.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\scale.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\scale_argb.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\scale_row.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\version.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\jni\libyuv\include\video_common.h">
+      <Filter>Header files\libyuv\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

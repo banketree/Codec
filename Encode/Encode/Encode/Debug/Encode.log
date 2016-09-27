@@ -1,0 +1,93 @@
+﻿生成启动时间为 2016/9/27 15:28:08。
+     1>项目“C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode\Encode.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>CoreClean:
+         "F:\VisualGDB\VisualGDB.exe" /clean "C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode\Encode.vcxproj" "/solution:C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Executing preclean actions
+         VisualGDB: Run "G:\Android_Ndk\android-ndk-r12b\ndk-build.cmd NDK_DEBUG=1 APP_PLATFORM=android-18 VGDB_VSCONFIG=Debug clean" in directory "C:\Users\Administrator\Desktop\H264\Encode" on local computer
+     1>Android NDK : warning : APP_PLATFORM android-18 is larger than android:minSdkVersion 16 in ./AndroidManifest.xml
+         [armeabi-v7a] Clean          : encode [armeabi-v7a]
+         [armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+         [armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+         [armeabi-v7a] Clean          : x264 [armeabi-v7a]
+         [armeabi-v7a] Clean          : yuv [armeabi-v7a]
+         VisualGDB: Run "G:\apache-ant-1.9.6-bin\apache-ant-1.9.6\bin\ant.bat clean" in directory "C:\Users\Administrator\Desktop\H264\Encode" on local computer
+         Buildfile: C:\Users\Administrator\Desktop\H264\Encode\build.xml
+         
+         -check-env:
+          [checkenv] Android SDK Tools Revision 25.1.3
+          [checkenv] Installed at G:\Android_Sdk\adt-bundle-windows-x86-20140702\sdk
+         
+         -setup:
+              [echo] Project Name: MainActivity
+           [gettype] Project Type: Application
+         
+         -pre-clean:
+         
+         clean:
+         [getlibpath] Library dependencies:
+         [getlibpath] No Libraries
+            [subant] No sub-builds to iterate on
+         
+         BUILD SUCCESSFUL
+         Total time: 0 seconds
+         VisualGDB: Deleting C:\Users\Administrator\Desktop\H264\Encode\bin and all its contents.
+         VisualGDB: Deleting C:\Users\Administrator\Desktop\H264\Encode\obj and all its contents.
+         VisualGDB: Executing postclean actions
+       Rebuild:
+         "F:\VisualGDB\VisualGDB.exe" /rebuild "C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode\Encode.vcxproj" "/solution:C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode.sln" "/config:Debug" "/platform:Win32"
+         VisualGDB: Executing preclean actions
+         VisualGDB: Run "G:\Android_Ndk\android-ndk-r12b\ndk-build.cmd NDK_DEBUG=1 APP_PLATFORM=android-18 VGDB_VSCONFIG=Debug clean" in directory "C:\Users\Administrator\Desktop\H264\Encode" on local computer
+     1>Android NDK : warning : APP_PLATFORM android-18 is larger than android:minSdkVersion 16 in ./AndroidManifest.xml
+         [armeabi-v7a] Clean          : encode [armeabi-v7a]
+         [armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+         [armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+         [armeabi-v7a] Clean          : x264 [armeabi-v7a]
+         [armeabi-v7a] Clean          : yuv [armeabi-v7a]
+         VisualGDB: Run "G:\apache-ant-1.9.6-bin\apache-ant-1.9.6\bin\ant.bat clean" in directory "C:\Users\Administrator\Desktop\H264\Encode" on local computer
+         Buildfile: C:\Users\Administrator\Desktop\H264\Encode\build.xml
+         
+         -check-env:
+          [checkenv] Android SDK Tools Revision 25.1.3
+          [checkenv] Installed at G:\Android_Sdk\adt-bundle-windows-x86-20140702\sdk
+         
+         -setup:
+              [echo] Project Name: MainActivity
+           [gettype] Project Type: Application
+         
+         -pre-clean:
+         
+         clean:
+         [getlibpath] Library dependencies:
+         [getlibpath] No Libraries
+            [subant] No sub-builds to iterate on
+         
+         BUILD SUCCESSFUL
+         Total time: 0 seconds
+         VisualGDB: Deleting C:\Users\Administrator\Desktop\H264\Encode\bin and all its contents.
+         VisualGDB: Deleting C:\Users\Administrator\Desktop\H264\Encode\obj and all its contents.
+         VisualGDB: Executing postclean actions
+         VisualGDB: Executing prebuild actions
+         VisualGDB: Run "G:\Android_Ndk\android-ndk-r12b\ndk-build.cmd NDK_DEBUG=1 APP_PLATFORM=android-18 VGDB_VSCONFIG=Debug" in directory "C:\Users\Administrator\Desktop\H264\Encode" on local computer
+     1>Android NDK : warning : APP_PLATFORM android-18 is larger than android:minSdkVersion 16 in ./AndroidManifest.xml
+         [armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.9] libs/armeabi-v7a/gdbserver
+         [armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+         [armeabi-v7a] Compile++ thumb: encode <= libencode.cc
+         [armeabi-v7a] SharedLibrary  : libencode.so
+         jni/lib/libx264.a(ratecontrol.o): In function `x264_ratecontrol_new':
+         ratecontrol.c:(.text+0x4ab2): undefined reference to `stpcpy'
+         ratecontrol.c:(.text+0x4b7a): undefined reference to `stpcpy'
+         ratecontrol.c:(.text+0x4c40): undefined reference to `stpcpy'
+         ratecontrol.c:(.text+0x4c76): undefined reference to `stpcpy'
+     1>collect2.exe : error : ld returned 1 exit status
+         make: *** [obj/local/armeabi-v7a/libencode.so] Error 1
+         -------------------------------------------------------------
+         Command exited with code 2
+         Executable: G:\Android_Ndk\android-ndk-r12b\ndk-build.cmd
+         Arguments: NDK_DEBUG=1 APP_PLATFORM=android-18 VGDB_VSCONFIG=Debug
+         Directory: C:\Users\Administrator\Desktop\H264\Encode
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\Microsoft.MakeFile.Targets(43,5): error MSB3073: 命令“"F:\VisualGDB\VisualGDB.exe" /rebuild "C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode\Encode.vcxproj" "/solution:C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode.sln" "/config:Debug" "/platform:Win32"”已退出，代码为 1。
+     1>已完成生成项目“C:\Users\Administrator\Desktop\H264\Encode\Encode\Encode\Encode.vcxproj”(rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:06.52
